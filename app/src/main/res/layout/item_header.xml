@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#007aab"
+    android:minHeight="150dp"
+    android:orientation="vertical"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp">
+
+    <cn.andye.fragmenttabhost.PieChartView
+        android:id="@+id/pie_ch"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="#007aab"
+        android:paddingBottom="40dp"
+        android:paddingLeft="20dp"
+        app:circleRadius="100dp"
+        app:textSize="13sp" />
+
+    <!--<TextView-->
+        <!--android:id="@+id/headw"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:text="HELLO"-->
+        <!--android:textColor="#ffffff"-->
+        <!--android:textSize="14dp" />-->
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Monk2 </string>
+    <string name="play_sound">Play Sound</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="upabout">灵&#160;&#160;&#160;000000~010000\n艺&#160;&#160;&#160;010000~0030000\n齐&#160;&#160;&#160;030000~0060000\n宫&#160;&#160;&#160;060000~0100000\n山&#160;&#160;&#160;100000~0182500\n师&#160;&#160;&#160;182500~0250000\n难&#160;&#160;&#160;250000~0400000\n悟&#160;&#160;&#160;400000~0600000\n佛&#160;&#160;&#160;600000~1000000</string>
+    <string-array name="word_woqu">
+        <item>凡事都不能有好斗的心态</item>
+        <item>感恩使人梦想成为被感恩的人</item>
+        <item>努力不应该是某种需要被时常被感知的东西</item>
+        <item>同样的东西，轻易得到的人不珍惜</item>
+        <item>胜易骄，败易馁</item>
+        <item>人无完人，不要苛责别人苛责自己</item>
+        <item>缺点使人生厌，也使人怜惜</item>
+        <item>熟能生巧，天道酬勤</item>
+    </string-array>
+
+</resources>

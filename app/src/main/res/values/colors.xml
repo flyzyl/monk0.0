@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="textColor_black">#222222</color>
+    <color name="transparent">#00000000</color>
+    <color name="title_bkg">#48a1ff</color>
+    <color name="btn_unselect">#dddddd</color>
+    <color name="btn_selected">#aaaaaa</color>
+    <color name="right_key_unselect">#80dddddd</color>
+    <color name="right_key_selected">#80aaaaaa</color>
+    <color name="right_key_textColor">#80222222</color>
+    <color name="bkg_num_color">#40ffffff</color>
+    <color name="nn">#0000ff</color>
+</resources>
+

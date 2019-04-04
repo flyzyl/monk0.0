@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#c4bfb9"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp">
+
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Hello,world!"
+        android:textColor="#000000" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dfdfdf" />
+
+    <LinearLayout
+        android:id="@+id/comment_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#c4bfb9"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btn_input_comment"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_input_comment"
+        android:gravity="center_vertical"
+        android:hint="添加"
+        android:onClick="inputComment"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textColor="#000000"
+        android:textColorHint="#aaaaaa"
+        android:textSize="14dp" />
+</LinearLayout>

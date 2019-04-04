@@ -1,0 +1,4 @@
+#Sun Mar 10 20:01:20 CST 2019
+base.0=C\:\\Users\\Administrator\\Desktop\\FragmentTabHost2\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.andye.fragmenttabhost2"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="28" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:icon="@drawable/ic_app3"
+        android:label="@string/app_name"
+        android:persistent="true"
+        android:testOnly="true"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        <activity
+            android:name="cn.andye.fragmenttabhost.MainActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustNothing" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.andye.fragmenttabhost.fra.upAbout"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <receiver android:name="cn.andye.fragmenttabhost.clock.AlarmReceiver" >
+        </receiver>
+
+        <activity
+            android:name="cn.andye.fragmenttabhost.clock.PlayAlarmAty"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Wallpaper.NoTitleBar" >
+        </activity>
+
+        <service
+            android:name="cn.andye.fragmenttabhost.Service.TimeService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+    </application>
+
+</manifest>
