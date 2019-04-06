@@ -32,9 +32,7 @@ import cn.andye.fragmenttabhost.save.monkeyDB;
 import cn.andye.fragmenttabhost.save.prepareDB;
 
 /**
- * home2
- * @author andye
- *
+ * 第二个页面
  */
 public class Home2Fra extends Fragment implements OnClickListener {
 	String getdata;
@@ -73,18 +71,17 @@ public class Home2Fra extends Fragment implements OnClickListener {
 
 	}
 
-	private Handler timerHandler = new Handler(){
+	private Handler timerHandler = new Handler() {
 		public void handleMessage(android.os.Message msg) {
 			Log.d("abcd", "handleMessage: ");
-
-			Long mph=TimeService.getTimeService().ptime();
+			Long mph = TimeService.getTimeService().ptime();
 			long day = mph / (24 * 60 * 60 * 1000);
-			long hour = (mph/ (60 * 60 * 1000) - day * 24);
+			long hour = (mph / (60 * 60 * 1000) - day * 24);
 			long min = ((mph / (60 * 1000)) - day * 24 * 60 - hour * 60);
 			long s = (mph / 1000 - day * 24 * 60 * 60 - hour * 60 * 60 - min * 60);
 			long ms = (mph - day * 24 * 60 * 60 * 1000 - hour * 60 * 60 * 1000 - min * 60 * 1000 - s * 1000);
-			phtime.setText("亮屏时间："+hour+"小时"+min+"分"+s+"秒");
-		timerHandler.sendEmptyMessageDelayed(0, 3000);
+			phtime.setText("亮屏时间：" + hour + "小时" + min + "分" + s + "秒");
+			timerHandler.sendEmptyMessageDelayed(0, 3000);
 		}
 	};
 
